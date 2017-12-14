@@ -2,62 +2,171 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Crystal Game</title>
+    <title>Escape From the Overlook Hotel</title>
 
-    <!-- Link to style CSS -->
+     <!-- Link to Bootstrap -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" 
+     integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <!-- Link to Style CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-    <!-- Link to reset CSS -->
+    <!-- Link to Reset CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 
-    <!-- Link to Javascript -->
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <!-- jQuery link -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+    
+
+    
 
 </head>
 <body>
 
+<div class="container">
     <!-- Main banner div-->
-    <div>
-        Crystals Collector!
+    <div class="jumbotron">
+        <h1 class="display-4">Escape From the Overlook Hotel</h1>
     </div>
 
-    <!-- Instructions container div -->
-    <div>
-        <p>
-            You will be given a random number at the start
-            of the game.
-        </p>
-        <p>
-            There are four crystals below. By clicking on a crystal
-            you will add a specific amount of points to your total score.
-        </p>
-        <p>
-            You win the game by matching your total score to the random number,
-            you lose the game if your total score goes above the random number.
-        </p>
-        <p>
-            The value of each crystal is hidden from you until you click on it.
-        </p>
-        <p>
-            Each time when the game starts, the game will change the value
-            of each crystal.
-        </p>
+    <!-- Main Content div -->
+
+    <div class="row">
+       
+        <!-- Instructions container div -->
+
+        <div class="col-lg-12">
+            <div class="card">
+                    <div class="card-header">
+                            Instructions
+                    </div>
+                <div class="card-body">
+                    <p>
+                        You will be given a random number at the start
+                        of the game.
+                    </p>
+                    <br>
+                    <p>
+                        There are four characters below. By clicking on a character
+                        you will add a specific amount of points to your total score.
+                    </p>
+                    <br>
+                    <p>
+                        You win the game by matching your total score to the random number,
+                        you lose the game if your total score goes above the random number.
+                    </p>
+                    <br>
+                    <p>
+                        The value of each character is hidden from you until you click on it.
+                    </p>
+                    <br>
+                    <p>
+                        Each time when the game starts, the game will change the value
+                        of each character.
+                    </p>
+                </div>
+            </div>
+        </div>
+
     </div>
 
-    <!-- Score and wins and losses div -->
-    <div>
+    <br>
+
+    <!-- Score and wins and losses divs -->
+    <div class="row">
+
+    <!-- Target Score -->
+        <div class="col-lg-4">
+
+                <div class="card">
+                        <div class="card-header">
+                                <p class="text-center" id="targetScore">Target Score</p>
+                        </div>
+                    <div class="card-body">
+                        <h2 class="text-center">27</h2>
+                    </div>
+                </div>
+
+        </div>
+    <!-- Player Score -->
+
+        <div class="col-lg-4">
+                
+                <div class="card">
+                            <div class="card-header">
+                                <p class="text-center" id="playerScore">Player Score</p>
+                            </div>
+                                <div class="card-body">
+                                    <h2 class="text-center">31</h2>
+                                </div>
+                </div>
+                
+        </div>
 
     </div>
 
-    <!-- Crystal images div -->
-    <div>
+    <br>
+
+    <!-- Character images div -->
+    <div class="row">
+
+        <div class="col-lg-12">
+
+                <div class="card">
+                        <div class="card-header">
+                            <p class="text-center">Overlook Hotel Guests</p>
+                        </div>
+                            <div class="card-body text-center">
+                                <img src="assets/images/jack.jpg" alt="Jack" id="jack">
+                                <img src="assets/images/wendy.jpg" alt="Wendy" id="wendy">
+                                <img src="assets/images/danny.jpg" alt="Danny" id="danny">
+                                <img src="assets/images/hallorann.jpg" alt="Hallorann" id="hallorann">
+                            </div>
+                </div>
+            
+        </div>
 
     </div>
 
-    <!-- Total score div -->
-    <div>
+    <br>
+
+    <!-- Wins and Losses div -->
+    <div class="row">
+
+        <!-- Wins -->
+        <div class="col-lg-6">
+                <div class="card">
+                        <div class="card-header">
+                            <p class="text-center" id="wins">Wins</p>
+                        </div>
+                            <div class="card-body">
+                                <h2 class="text-center">0</h2>
+                            </div>
+            </div>
+
+        </div>
+
+        <!-- Losses -->
+        <div class="col-lg-6">
+                <div class="card">
+                        <div class="card-header">
+                            <p class="text-center" id="losses">Losses</p>
+                        </div>
+                            <div class="card-body">
+                                <h2 class="text-center">0</h2>
+                            </div>
+            </div>
+
+        </div>
 
     </div>
+
+</div>
+
+
+<!-- Link to Javascript -->
+<script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </body>
 </html>

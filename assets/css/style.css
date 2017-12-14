@@ -1,0 +1,21 @@
+body {
+    font-family:'Lucida Sans Typewriter', 'Lucida Sans', Verdana, sans-serif;
+    background: url(../images/background.jpg)
+}
+.jumbotron {
+    text-align: center;
+    font-family: 'Lucida Sans Typewriter', 'Lucida Sans', Verdana, sans-serif;
+    color: black;
+    font-weight: bold;
+    background-color: #921924;
+}
+
+.card,
+.card-header {
+    text-align: left;
+    font-family: 'Lucida Sans Typewriter', 'Lucida Sans', Verdana, sans-serif;
+    color: black;
+    font-weight: bold;
+    background-color: #d2512d;
+
+}
